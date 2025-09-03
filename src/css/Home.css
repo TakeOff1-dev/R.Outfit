@@ -1,0 +1,95 @@
+H1{
+    font-weight: bolder;
+    font-size: 40px
+}
+.shop-now{
+    border: none;
+    background-color: rgb(146, 3, 3);
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 10px;
+    padding: 10px 60px;
+}
+@media (max-width: 720px) {
+    .shop-now {
+      width: 100%;
+      border-radius: 10%;
+    }
+    #border{
+        display: inline;
+        text-align: center;
+    }
+   
+    
+  }
+#border{
+    border-right: 1px solid grey;
+}
+.p{
+color: grey
+}
+.image{
+    background: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.bg-black{
+    background-color: black;
+    padding: 20px;
+    color: white;
+
+}
+
+/* new arrival */
+
+.card {
+    height: 100px;
+ 
+}
+
+Link{
+    text-decoration: none;
+}
+ 
+.card{
+    color:black;
+    margin:10px;
+    box-shadow: 4px 8px 8px 4px rgb(0, 0, 0, 0.2)
+}
+.bi-heart{
+    cursor: pointer;
+    padding-left:18px;
+    
+}
+.bi-star-fill{
+    cursor: pointer;
+    padding-left:8px;
+    color: rgb(182, 182, 15);
+}
+.bi-star{
+    cursor: pointer;
+    padding-left:8px;
+    color: rgb(108, 108, 15);
+}
+
+#btn{
+cursor: pointer;
+margin-left: 18px;
+width: 100px;
+}
+.name{
+    color: white;
+    background-color: black;
+    padding: 5px;
+   
+}
+.price{
+    color:red;
+
+}
+
+
+
