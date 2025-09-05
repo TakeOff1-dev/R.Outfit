@@ -313,6 +313,69 @@ function Home() {
             </div>
           </div>
 
+
+          {/* testimonials */}
+          <div className="container">
+            <div className="row">
+              <h3><b>OUR HAPPY CUSTOMES</b></h3>
+              <br /><br />
+              <div className="col-md-4">
+                   <div className="test-border">
+                    
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+<h6>Conil C</h6>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                                elit. Dolores esse, necessitatibus placeat 
+                                architecto ab minima iste odio officiis totam, 
+                                iure quo perferendis ullam adipisci voluptatibus.
+                                 Optio illo incidunt veniam totam.</p>
+                            </div>
+              </div>
+              <div className="col-md-4">
+                <div className="test-border">
+                
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                           <h6>Saad A</h6>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                                elit. Dolores esse, necessitatibus placeat 
+                                architecto ab minima iste odio officiis totam, 
+                                iure quo perferendis ullam adipisci voluptatibus.
+                                 Optio illo incidunt veniam totam.</p>
+                            </div>
+              </div>
+              <div className="col-md-4">
+                <div className="test-border">
+                  
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                           <h6>Sarah M</h6>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                                elit. Dolores esse, necessitatibus placeat 
+                                architecto ab minima iste odio officiis totam, 
+                                iure quo perferendis ullam adipisci voluptatibus.
+                                 Optio illo incidunt veniam totam.</p>
+                            </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+
+
+
+{/* end of div */}
         </div>
 
 
