@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// imgaes
+import casual from '../images/casual.png'
+import formal from '../images/formal.png'
+import gym from '../images/gym.png'
+import party from '../images/party.png'
 
 function Home() {
   // array of image
@@ -17,19 +22,19 @@ function Home() {
       review: "Lorem lorem lorem lorem lorem"
     },
     {
-      name: "Men's Casual",
+      name: "Men'sCasual",
       "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
       price: "280.99",
       review: "Lorem lorem lorem lorem lorem"
     },
     {
-      name: "Men's cotton",
+      name: "Men'sCotton",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
       price: "230.99",
       review: "Lorem lorem lorem lorem lorem"
     },
     {
-      name: "Men's Clothing",
+      name: "Men'sClothing",
       "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
       price: "210.99",
       review: "Lorem lorem lorem lorem lorem"
@@ -43,25 +48,25 @@ function Home() {
       name: "Rain Jacket",
       "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
       price: "230.99",
-      review: "Lorem lorem lorem lorem lorem"
+      review: "Lorem lorem lorem loremlorem"
     },
     {
-      name: "MBJ Women Solid",
+      name: "MBJ Women ",
       "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png",
       price: "280.99",
-      review: "Lorem lorem lorem lorem lorem"
+      review: "Lorem lorem lorem loremlorem"
     },
     {
-      name: "Opna Women Short",
+      name: " Women Short",
       "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png",
       price: "230.99",
-      review: "Lorem lorem lorem lorem lorem"
+      review: "Lorem lorem lorem loremlorem"
     },
     {
-      name: "DANVOUY Womens T Shirt ",
+      name: " Womens T-Shirt ",
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
       price: "210.99",
-      review: "Lorem lorem lorem lorem lorem"
+      review: "Lorem lorem lorem loremlorem"
     }
   ];
 
@@ -72,7 +77,7 @@ function Home() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1
   };
   return (
@@ -197,6 +202,49 @@ function Home() {
               </div>
             </div>
           </div>
+
+{/* browee by dress style */}
+<div className="container">
+  <div className="bg-color">
+  <div className="row">
+    <div className="text-center">
+      <h3> <b>BROWSE BY DRESS STYLE</b></h3>
+    </div> <br /><br />
+    {/* images */}
+<div className="col-md-8">
+ <div className="card">
+  <p className="bds-p">Casual</p>
+  <img src={casual} alt="" w-4 className="bds-img"/>
+ </div>
+</div>
+<div className="col-md-4">
+  <div className="card">
+  <p className="bds-p">Formal</p>
+  <img src={formal} alt="" w-4 className="bds-img"/>
+ </div>
+</div>
+{/* another row */}
+<div className="row">
+  <div className="col-md-4">
+<div className="card">
+  <p className="bds-p">Gym</p>
+  <img src={gym} alt="" w-4 className="bds-img"/>
+ </div>
+  </div>
+  <div className="col-md-8">
+<div className="card">
+  <p className="bds-p">Party</p>
+  <img src={party} alt="" w-4 className="bds-img"/>
+ </div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+  
+
+
+
 
           {/* specials */}
           <br />
