@@ -51,9 +51,9 @@ function Navbar() {
 
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="#">
             SHOP.CO
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -68,50 +68,50 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-1 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/Home">
+                <Link className="nav-link active" aria-current="page" to="/Home">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="#">
                   On Sale
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="/Shop"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Shop
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link className="dropdown-item" to="/Shop">
+                      Shop
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Another action
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-disabled="true">
+                <Link className="nav-link" to="">
                   New Arrival
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">

@@ -22,9 +22,15 @@ H1{
         columns: 2;
     }
     .test-border{
-        margin:7px;
+        margin:2px;
     }
+   .name p{
+    display: none;
    
+   }
+   .bi-star{
+display: none;
+   }
     
   }
 #border{
@@ -61,7 +67,7 @@ Link{
  
 .card{
     color:black;
-    margin:10px;
+    margin:3px;
     box-shadow: 4px 8px 8px 4px rgb(0, 0, 0, 0.2)
 }
 .bi-heart{

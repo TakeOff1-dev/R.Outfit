@@ -11,6 +11,7 @@ import Profile from './components/Profile'
 //pages
 import Home from './pages/Home'
 import Filter from './pages/Filter'
+import Shop from './pages/Shop'
 
 // //Test
 // import Todo from './test/Todo'
@@ -28,6 +29,7 @@ function App() {
 {/* <Route path='/' element={ <Todo /> } /> */}
  <Route path='/' element={ <Home /> } /> 
      <Route path='/Home' element={ <Home /> } /> 
+      <Route path='/Shop' element={ <Shop /> } /> 
      <Route path='/Login' element={<Login />} />
       <Route path='/Creact' element={<Creact />} />
       <Route path='/Profile' element={<Profile />} />
@@ -37,7 +39,7 @@ function App() {
 </Routes>
 
 
-     <Footer/>
+     <Footer />
     </div>
   );
 }

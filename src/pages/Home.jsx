@@ -253,7 +253,7 @@ function Home() {
               {" "}
               <b>SPECIALS </b>
             </h3>
-            <p className="text-center"> <i> Lorem ipsum dolor sit amet consectetur
+            <p style={{color:"grey"}} className="text-center"> <i> Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Veritatis impedit
               eius vel nemo maiores laboriosam
               exercitationem consequatur <br />
@@ -328,7 +328,7 @@ function Home() {
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
 <h6>Conil C</h6>
-                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                              <p style={{color:"grey"}}> Lorem, ipsum dolor sit amet consectetur adipisicing 
                                 elit. Dolores esse, necessitatibus placeat 
                                 architecto ab minima iste odio officiis totam, 
                                 iure quo perferendis ullam adipisci voluptatibus.
@@ -344,7 +344,7 @@ function Home() {
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                            <h6>Saad A</h6>
-                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                              <p style={{color:"grey"}}>Lorem, ipsum dolor sit amet consectetur adipisicing 
                                 elit. Dolores esse, necessitatibus placeat 
                                 architecto ab minima iste odio officiis totam, 
                                 iure quo perferendis ullam adipisci voluptatibus.
@@ -360,7 +360,7 @@ function Home() {
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star"></i>
                            <h6>Sarah M</h6>
-                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                              <p style={{color:"grey"}}>Lorem, ipsum dolor sit amet consectetur adipisicing 
                                 elit. Dolores esse, necessitatibus placeat 
                                 architecto ab minima iste odio officiis totam, 
                                 iure quo perferendis ullam adipisci voluptatibus.
