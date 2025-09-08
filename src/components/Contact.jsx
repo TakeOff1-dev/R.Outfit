@@ -70,6 +70,7 @@ export default function Contact() {
                             </div>
                             <br />
                             <button type="button" class="btn btn-primary" style={{ "width": "100%", "text-align": "center" }}>Submit</button>
+                            <br /><br />
                         </div>
                     </div>
                 </div>
