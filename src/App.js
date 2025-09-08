@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import Login from './components/Login'
 import Creact from './components/Creact'
 import Profile from './components/Profile'
+import Cart from './components/Cart'
+import Favorites from './components/Favorites'
 
 //pages
 import Home from './pages/Home'
@@ -34,7 +36,8 @@ function App() {
       <Route path='/Creact' element={<Creact />} />
       <Route path='/Profile' element={<Profile />} />
  <Route path='/Filter' element={ <Filter /> } /> 
-
+ <Route path='/Cart' element={ <Cart /> } /> 
+ <Route path='/Favorites' element={ <Favorites /> } /> 
 
 </Routes>
 

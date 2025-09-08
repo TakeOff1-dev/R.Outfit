@@ -49,7 +49,7 @@ function Navbar() {
         </div>
       )}
 
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary" >
         <div className="container">
           <Link className="navbar-brand" to="#">
             SHOP.CO
@@ -133,8 +133,8 @@ function Navbar() {
                   aria-describedby="addon-wrapping"
                 />
               </div>
-              <Link><i id="icons" class="bi bi-cart"></i></Link>
-            <Link><i id="icons" class="bi bi-heart"></i></Link>  
+              <Link to="/Cart"><i id="icons" class="bi bi-cart"></i></Link>
+            <Link to="/Favorites"><i id="icons" class="bi bi-heart"></i></Link>  
               <Link to="/Profile"><i id="icons" class="bi bi-person-circle"></i></Link>
             </form>
           </div>
