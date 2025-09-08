@@ -9,11 +9,13 @@ import Creact from './components/Creact'
 import Profile from './components/Profile'
 import Cart from './components/Cart'
 import Favorites from './components/Favorites'
+import Contact from './components/Contact'
 
 //pages
 import Home from './pages/Home'
 import Filter from './pages/Filter'
 import Shop from './pages/Shop'
+import Category from './pages/Category'
 
 // //Test
 // import Todo from './test/Todo'
@@ -38,6 +40,9 @@ function App() {
  <Route path='/Filter' element={ <Filter /> } /> 
  <Route path='/Cart' element={ <Cart /> } /> 
  <Route path='/Favorites' element={ <Favorites /> } /> 
+  <Route path='/Category' element={ <Category /> } /> 
+  <Route path='/Contact' element={ <Contact /> } /> 
+ 
 
 </Routes>
 

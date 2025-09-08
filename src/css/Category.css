@@ -1,0 +1,56 @@
+.border{
+    border: 1px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+#color-1{
+background-color: rgb(2, 2, 77);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+
+
+#color-2{
+background-color: green;
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+
+#color-3{
+background-color: rgb(118, 120, 118);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+#color-4{
+background-color: rgb(164, 5, 5);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+#color-5{
+background-color: rgb(158, 178, 10);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+#color-6{
+background-color: rgb(30, 8, 193);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+#color-7{
+background-color: rgb(161, 10, 88);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+#color-8{
+background-color: rgb(2, 12, 2);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}

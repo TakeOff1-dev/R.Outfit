@@ -45,8 +45,10 @@ background-color: rgb(118, 120, 118);
 border-radius: 50%;
 height: 30px;
 width: 30px;
-}.btn{
+}
+.btn{
     display:flex;
+
 }.btn button{
     margin:5px;
 }#add-to-card{
