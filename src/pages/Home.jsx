@@ -181,8 +181,8 @@ function Home({ addToCard }) {
                         </div>
                         <div className=" card-body flex flex-col justify-center items-center">
                           <p className="name">
-                            {i.name}
-                            {/* <p>{i.review.substring(0, 12)}</p> */}
+                            {i.title.substring(0 ,10)}
+                            <p>{i.description.substring(0, 10)}</p>
                           </p>
                           <p className="price">
                             R{i.price}
@@ -217,33 +217,34 @@ function Home({ addToCard }) {
                 </div> <br /><br />
                 {/* images */}
                 <div className="col-md-8">
-                  <div className="card">
+                  <div className="card" >
                     <p className="bds-p">Casual</p>
                     <img src={casual} alt="" w-4 className="bds-img" />
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="card">
+                  <div className="card" >
                     <p className="bds-p">Formal</p>
                     <img src={formal} alt="" w-4 className="bds-img" />
                   </div>
                 </div>
+              </div>
+
                 {/* another row */}
                 <div className="row">
-                  <div className="col-md-4">
-                    <div className="card">
+                  <div className="col-md-4" >
+                    <div className="card" id="bds-imgs">
                       <p className="bds-p">Gym</p>
                       <img src={gym} alt="" w-4 className="bds-img" />
                     </div>
                   </div>
                   <div className="col-md-8">
-                    <div className="card">
+                    <div className="card" id="">
                       <p className="bds-p">Party</p>
                       <img src={party} alt="" w-4 className="bds-img" />
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
 
@@ -281,8 +282,6 @@ function Home({ addToCard }) {
                         </div>
                         <div className=" card-body flex flex-col justify-center items-center">
                           <p className="name">
-
-
                             {i.name}
                             <p>{i.review.substring(0, 12)}</p>
                           </p>

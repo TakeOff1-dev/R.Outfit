@@ -1,3 +1,6 @@
+*{
+box-sizing: 0px;
+}
 H1{
     font-weight: bolder;
     font-size: 40px
@@ -24,13 +27,11 @@ H1{
     .test-border{
         margin:2px;
     }
-   .name p{
-    display: none;
    
-   }
    .bi-star{
 display: none;
    }
+  
     
   }
 #border{
