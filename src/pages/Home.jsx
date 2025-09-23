@@ -1,45 +1,50 @@
 import "../css/Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ThemeProvider } from "react-bootstrap";
+import { Card, ThemeProvider } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+// Product
+import Product from '../json/Filter.json'
+
 // courousel
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 // imgaes
 import casual from '../images/casual.png'
 import formal from '../images/formal.png'
 import gym from '../images/gym.png'
 import party from '../images/party.png'
 
-function Home() {
-  // array of image
-  const images = [
-    {
-      name: "Fjallraven",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
-      price: "230.99",
-      review: "Lorem lorem lorem lorem lorem"
-    },
-    {
-      name: "Men'sCasual",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
-      price: "280.99",
-      review: "Lorem lorem lorem lorem lorem"
-    },
-    {
-      name: "Men'sCotton",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
-      price: "230.99",
-      review: "Lorem lorem lorem lorem lorem"
-    },
-    {
-      name: "Men'sClothing",
-      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
-      price: "210.99",
-      review: "Lorem lorem lorem lorem lorem"
-    }
-  ];
+function Home({ addToCard }) {
+  // // array of image
+  // const images = [
+  //   {
+  //     name: "Fjallraven",
+  //     "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+  //     price: "230.99",
+  //     review: "Lorem lorem lorem lorem lorem"
+  //   },
+  //   {
+  //     name: "Men'sCasual",
+  //     "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+  //     price: "280.99",
+  //     review: "Lorem lorem lorem lorem lorem"
+  //   },
+  //   {
+  //     name: "Men'sCotton",
+  //     "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+  //     price: "230.99",
+  //     review: "Lorem lorem lorem lorem lorem"
+  //   },
+  //   {
+  //     name: "Men'sClothing",
+  //     "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+  //     price: "210.99",
+  //     review: "Lorem lorem lorem lorem lorem"
+  //   }
+  // ];
 
 
   // image / specials
@@ -163,13 +168,13 @@ function Home() {
             <div className="w-3/4 m-auto">
               <div className="mt-20">
                 <Slider {...settings}>
-                  {images.map(i => (
-                    <div className="  ">
+                  {Product.map(i => (
+                    <div className="">
                       <div className=" card  flex justify-center items-center">
                         <div className="img">
-<br />
-                          <button className=" px-6 py-1 badge bg-primary" id="btn">
-                            Add to chart
+                          <br />
+                          <button className=" px-6 py-1 badge bg-primary" id="btn" onClick={() => addToCard(i)}>
+                            Add to cart
                           </button>
                           <br /><br />
                           <img src={i.image} alt="" className="card-img-top" />
@@ -177,7 +182,7 @@ function Home() {
                         <div className=" card-body flex flex-col justify-center items-center">
                           <p className="name">
                             {i.name}
-                            <p>{i.review.substring(0, 12)}</p>
+                            {/* <p>{i.review.substring(0, 12)}</p> */}
                           </p>
                           <p className="price">
                             R{i.price}
@@ -203,45 +208,45 @@ function Home() {
             </div>
           </div>
 
-{/* browee by dress style */}
-<div className="container">
-  <div className="bg-color">
-  <div className="row">
-    <div className="text-center">
-      <h3> <b>BROWSE BY DRESS STYLE</b></h3>
-    </div> <br /><br />
-    {/* images */}
-<div className="col-md-8">
- <div className="card">
-  <p className="bds-p">Casual</p>
-  <img src={casual} alt="" w-4 className="bds-img"/>
- </div>
-</div>
-<div className="col-md-4">
-  <div className="card">
-  <p className="bds-p">Formal</p>
-  <img src={formal} alt="" w-4 className="bds-img"/>
- </div>
-</div>
-{/* another row */}
-<div className="row">
-  <div className="col-md-4">
-<div className="card">
-  <p className="bds-p">Gym</p>
-  <img src={gym} alt="" w-4 className="bds-img"/>
- </div>
-  </div>
-  <div className="col-md-8">
-<div className="card">
-  <p className="bds-p">Party</p>
-  <img src={party} alt="" w-4 className="bds-img"/>
- </div>
-  </div>
-</div>
-  </div>
-  </div>
-</div>
-  
+          {/* browee by dress style */}
+          <div className="container">
+            <div className="bg-color">
+              <div className="row">
+                <div className="text-center">
+                  <h3> <b>BROWSE BY DRESS STYLE</b></h3>
+                </div> <br /><br />
+                {/* images */}
+                <div className="col-md-8">
+                  <div className="card">
+                    <p className="bds-p">Casual</p>
+                    <img src={casual} alt="" w-4 className="bds-img" />
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="card">
+                    <p className="bds-p">Formal</p>
+                    <img src={formal} alt="" w-4 className="bds-img" />
+                  </div>
+                </div>
+                {/* another row */}
+                <div className="row">
+                  <div className="col-md-4">
+                    <div className="card">
+                      <p className="bds-p">Gym</p>
+                      <img src={gym} alt="" w-4 className="bds-img" />
+                    </div>
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card">
+                      <p className="bds-p">Party</p>
+                      <img src={party} alt="" w-4 className="bds-img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 
 
@@ -253,7 +258,7 @@ function Home() {
               {" "}
               <b>SPECIALS </b>
             </h3>
-            <p style={{color:"grey"}} className="text-center"> <i> Lorem ipsum dolor sit amet consectetur
+            <p style={{ color: "grey" }} className="text-center"> <i> Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Veritatis impedit
               eius vel nemo maiores laboriosam
               exercitationem consequatur <br />
@@ -267,7 +272,7 @@ function Home() {
                     <div className="">
                       <div className=" card  flex justify-center items-center">
                         <div className="img">
-<br />
+                          <br />
                           <button className=" px-6 py-1 badge bg-primary" id="btn">
                             Add to chart
                           </button>
@@ -320,52 +325,52 @@ function Home() {
               <h3><b>OUR HAPPY CUSTOMES</b></h3>
               <br /><br />
               <div className="col-md-4">
-                   <div className="test-border">
-                    
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-<h6>Conil C</h6>
-                              <p style={{color:"grey"}}> Lorem, ipsum dolor sit amet consectetur adipisicing 
-                                elit. Dolores esse, necessitatibus placeat 
-                                architecto ab minima iste odio officiis totam, 
-                                iure quo perferendis ullam adipisci voluptatibus.
-                                 Optio illo incidunt veniam totam.</p>
-                            </div>
+                <div className="test-border">
+
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <h6>Conil C</h6>
+                  <p style={{ color: "grey" }}> Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolores esse, necessitatibus placeat
+                    architecto ab minima iste odio officiis totam,
+                    iure quo perferendis ullam adipisci voluptatibus.
+                    Optio illo incidunt veniam totam.</p>
+                </div>
               </div>
               <div className="col-md-4">
                 <div className="test-border">
-                
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                           <h6>Saad A</h6>
-                              <p style={{color:"grey"}}>Lorem, ipsum dolor sit amet consectetur adipisicing 
-                                elit. Dolores esse, necessitatibus placeat 
-                                architecto ab minima iste odio officiis totam, 
-                                iure quo perferendis ullam adipisci voluptatibus.
-                                 Optio illo incidunt veniam totam.</p>
-                            </div>
+
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <h6>Saad A</h6>
+                  <p style={{ color: "grey" }}>Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolores esse, necessitatibus placeat
+                    architecto ab minima iste odio officiis totam,
+                    iure quo perferendis ullam adipisci voluptatibus.
+                    Optio illo incidunt veniam totam.</p>
+                </div>
               </div>
               <div className="col-md-4">
                 <div className="test-border">
-                  
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                           <h6>Sarah M</h6>
-                              <p style={{color:"grey"}}>Lorem, ipsum dolor sit amet consectetur adipisicing 
-                                elit. Dolores esse, necessitatibus placeat 
-                                architecto ab minima iste odio officiis totam, 
-                                iure quo perferendis ullam adipisci voluptatibus.
-                                 Optio illo incidunt veniam totam.</p>
-                            </div>
+
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <h6>Sarah M</h6>
+                  <p style={{ color: "grey" }}>Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolores esse, necessitatibus placeat
+                    architecto ab minima iste odio officiis totam,
+                    iure quo perferendis ullam adipisci voluptatibus.
+                    Optio illo incidunt veniam totam.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -375,7 +380,7 @@ function Home() {
 
 
 
-{/* end of div */}
+          {/* end of div */}
         </div>
 
 

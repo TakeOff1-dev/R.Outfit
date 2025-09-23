@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Header.css";
 
-function Navbar() {
+function Navbar({cart}) {
   const [show, setShow] = useState(true);
   const [index, setIndex] = useState(0);
 
@@ -68,7 +68,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-1 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/Home">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
@@ -115,25 +115,12 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              {/* <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search.."
-          aria-label="Search"
-        /> */}
-              <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">
-                  <i class="bi bi-search"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search.."
-                  aria-label="search"
-                  aria-describedby="addon-wrapping"
-                />
-              </div>
-              <Link to="/Cart"><i id="icons" class="bi bi-cart"></i></Link>
+            
+              <div className="form-floating">
+                                <input type="text" class="form-control" id="search" placeholder="Search"  />
+                                <label for="floatingPassword">Search</label>
+                            </div>
+              <Link to="/Cart"><i id="icons" class="bi bi-cart"></i><p>{cart.length}</p></Link>
             <Link to="/Favorites"><i id="icons" class="bi bi-heart"></i></Link>  
               <Link to="/Profile"><i id="icons" class="bi bi-person-circle"></i></Link>
             </form>

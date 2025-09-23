@@ -1,5 +1,9 @@
 
 import './App.css';
+import { useEffect, useState } from 'react';
+
+// Product
+import Product from './json/Filter.json'
 
 // components
 import Header from './components/Header'
@@ -24,30 +28,44 @@ import Category from './pages/Category'
 // routes
 import { Route, Routes } from 'react-router-dom';
 
+
 function App() {
+
+  // add to cart
+  const [cart, setCard] = useState([]);
+
+  const addToCard = (item) => {
+    const newCart = [...cart, item];
+    alert(item.title)
+    setCard(newCart);
+  }
+
+
+
   return (
     <div className="App">
-     <Header />
 
-<Routes>
-{/* <Route path='/' element={ <Todo /> } /> */}
- <Route path='/' element={ <Home /> } /> 
-     <Route path='/Home' element={ <Home /> } /> 
-      <Route path='/Shop' element={ <Shop /> } /> 
-     <Route path='/Login' element={<Login />} />
-      <Route path='/Creact' element={<Creact />} />
-      <Route path='/Profile' element={<Profile />} />
- <Route path='/Filter' element={ <Filter /> } /> 
- <Route path='/Cart' element={ <Cart /> } /> 
- <Route path='/Favorites' element={ <Favorites /> } /> 
-  <Route path='/Category' element={ <Category /> } /> 
-  <Route path='/Contact' element={ <Contact /> } /> 
- 
+      <Header cart={cart} />
 
-</Routes>
+      <Routes>
+        {/* <Route path='/' element={ <Todo /> } /> */}
+        <Route path='/' element={<Home Product={Product} addToCard={addToCard} />} />
+        {/* <Route path='/Home' element={<Home />} /> */}
+        <Route path='/Shop' element={<Shop />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Creact' element={<Creact />} />
+        <Route path='/Profile' element={<Profile />} />
+        <Route path='/Filter' element={<Filter />} />
+        <Route path='/Cart' element={<Cart cart={cart} setCard={setCard} />} />
+        <Route path='/Favorites' element={<Favorites />} />
+        <Route path='/Category' element={<Category />} />
+        <Route path='/Contact' element={<Contact />} />
 
 
-     <Footer />
+      </Routes>
+
+
+      <Footer />
     </div>
   );
 }

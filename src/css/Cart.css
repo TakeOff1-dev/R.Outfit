@@ -1,0 +1,30 @@
+.addToCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.addToCard img {
+    width: 100px;
+    height: 100px;
+}
+
+.btn button {
+    border: none;
+    border-radius: 10px;
+
+}
+
+p {
+    color: red;
+}
+
+@media (max-width:720px) {
+    .addToCard {
+        display: block;
+    }
+}
