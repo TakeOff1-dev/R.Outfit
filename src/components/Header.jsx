@@ -114,6 +114,11 @@ function Navbar({cart}) {
                   Category
                 </Link>
               </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/Contact">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
             <form className="d-flex" role="search">
             
