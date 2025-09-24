@@ -1,7 +1,17 @@
 
 .card img{
-    height: 180px;
+    height: 150px;
     
+}
+.btn-items button{
+    display: inline;
+    margin:5px;
+    
+}
+@media ( max-width: 720px){
+.btn-items button{
+    width:100%;
+}
 }
 /* .card p{
     color:red;

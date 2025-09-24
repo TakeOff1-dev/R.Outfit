@@ -193,9 +193,9 @@ function Home({ addToCard }) {
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star"></i>
                           </p>
-                          <button className=" px-6 py-1 badge bg-secondary">
+                         <Link to="/Filter"><button className=" px-6 py-1 badge bg-secondary">
                             See more
-                          </button>
+                          </button></Link> 
                         </div>
                       </div>
                     </div>
@@ -295,9 +295,11 @@ function Home({ addToCard }) {
                             <i class="bi bi-star"></i>
 
                           </p>
+                          <Link to="/Filter">
                           <button className=" px-6 py-1 badge bg-secondary">
                             See more
                           </button>
+                          </Link>
                         </div>
                       </div>
                     </div>

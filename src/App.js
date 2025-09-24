@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useEffect, useState } from 'react';
+import CookieConsent from "react-cookie-consent"
 
 // Product
 import Product from './json/Filter.json'
@@ -26,7 +27,7 @@ import Category from './pages/Category'
 
 
 // routes
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -66,6 +67,25 @@ function App() {
 
 
       <Footer />
+      {/* cookieconsent component */}
+      <CookieConsent debug={true}
+        location='bottom'
+        style={{
+          background: '#fcfafaff',
+          color: '#000',
+        }}
+        buttonStyle={{
+          color: '#fcfafaff',
+          background: '#000',
+
+        }}
+        buttonText="I Agree"
+      >
+
+        Cookies helps us deliver our services.
+        by using our services or clicking I agree, you agree to use our Cookies
+        <Link to="/policy">Learn more</Link>
+      </CookieConsent>
     </div>
   );
 }
