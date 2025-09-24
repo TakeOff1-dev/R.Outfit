@@ -19,7 +19,7 @@ export default function Filter() {
     <>
       {/* nav */}
 
-      <div className="container">
+      <div className="container" >
         <br />
         <h2>All Products</h2>
         {/* btns */}
@@ -62,7 +62,9 @@ export default function Filter() {
         </div>
         <br />
         <hr />
-        <div className="row">
+       
+        <div className="row" >
+           <div className="sds">
           {items.map(Val => (
             <div className="col-md-3">
               <div class="card">
@@ -70,7 +72,7 @@ export default function Filter() {
                 <button className=" px-6 py-1 badge bg-primary" id="btn">
                             Add to chart
                           </button>
-                          <br /><br />
+                          <br />
                 <img src={Val.image} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5>
@@ -82,7 +84,9 @@ export default function Filter() {
               </div>
             </div>
           ))}
+           </div>
         </div>
+       
       </div>
     </>
   );

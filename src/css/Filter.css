@@ -11,7 +11,15 @@
 @media ( max-width: 720px){
 .btn-items button{
     width:100%;
+   
 }
+ .sds{
+    columns: 2;
+    display: inline;
+ }
+ .card{
+    width: 100%;
+ }
 }
 /* .card p{
     color:red;
