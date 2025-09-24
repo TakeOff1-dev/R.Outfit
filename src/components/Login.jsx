@@ -4,15 +4,19 @@ import { Link } from 'react-router-dom'
 
 export default function login() {
     return (
-        < div className=' bg-light bg-gradient background'>
+        < div className=' container'>
 
             <form action="">
-                <h3>Sign in</h3>
+                <p>Sign in</p>
                 <br />
-                <div className="input">
-                    <input type="text" name="" id="" className='form-floating' placeholder='Username' required /> <br /><br />
-                    <input type="password" name="" id="" placeholder='Password' required /> <br /><br />
-                </div>
+                <div className="form-floating mb-3">
+                                <input type="text" className="form-control" id="floatingInput" placeholder="Usernmae" required />
+                                <label for="floatingInput">Usernmae</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="password" className="form-control" id="floatingInput" placeholder="Password" required />
+                                <label for="floatingInput">Password</label>
+                            </div>
                 <button id='btn'>Login</button><br /><br />
                 <h6>OR</h6>
                 <Link to="/creact">Create account</Link>

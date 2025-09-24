@@ -20,8 +20,9 @@ function Navbar({cart}) {
     {
       id: 3,
       text: "Get 10% off your first order",
-      link: "/login"
-    }
+      link: "/Login"
+    },
+   
   ];
   useEffect(() => {
     const timer = setTimeout(() => {
