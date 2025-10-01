@@ -1,11 +1,13 @@
-*{
-box-sizing: 0px;
+* {
+    box-sizing: 0px;
 }
-H1{
+
+H1 {
     font-weight: bolder;
     font-size: 40px
 }
-.shop-now{
+
+.shop-now {
     border: none;
     background-color: rgb(146, 3, 3);
     color: white;
@@ -14,40 +16,46 @@ H1{
     padding: 10px;
     padding: 10px 60px;
 }
+
 @media (max-width: 720px) {
     .shop-now {
-      width: 100%;
-      border-radius: 10%;
+        width: 100%;
+        border-radius: 10%;
     }
-    #border{
+
+    #border {
         display: inline;
         text-align: center;
         columns: 2;
     }
-    .test-border{
-        margin:2px;
+
+    .test-border {
+        margin: 2px;
     }
-   
-   .bi-star{
-display: none;
-   }
-  
-    
-  }
-#border{
+
+    .bi-star {
+        display: none;
+    }
+
+
+}
+
+#border {
     border-right: 1px solid grey;
 }
-.p{
-color: grey
+
+.p {
+    color: grey
 }
-.image{
+
+.image {
     background: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.bg-black{
+.bg-black {
     background-color: black;
     padding: 20px;
     color: white;
@@ -59,67 +67,73 @@ color: grey
 
 .card {
     height: 100px;
- 
+
 }
 
-Link{
+Link {
     text-decoration: none;
 }
- 
-.card{
-    color:black;
-    margin:3px;
+
+.card {
+    color: black;
+    margin: 3px;
     box-shadow: 4px 8px 8px 4px rgb(0, 0, 0, 0.2)
 }
-.bi-heart{
+
+.bi-heart {
     cursor: pointer;
-    padding-left:18px;
-    
+    padding-left: 18px;
+
 }
-.bi-star-fill{
+
+.bi-star-fill {
     cursor: pointer;
-    padding-left:8px;
+    padding-left: 8px;
     color: rgb(182, 182, 15);
 }
-.bi-star{
+
+.bi-star {
     cursor: pointer;
-    padding-left:8px;
+    padding-left: 8px;
     color: rgb(108, 108, 15);
 }
 
-#btn{
-cursor: pointer;
-margin-left: 18px;
-width: 100px;
+#btn {
+    cursor: pointer;
+    margin-left: 18px;
+    width: 100px;
 }
-.name{
+
+.name {
     color: white;
     background-color: black;
     padding: 5px;
-   
+
 }
-.price{
-    color:red;
+
+.price {
+    color: red;
 
 }
 
 /* browse with style */
-.bg-color{
+.bg-color {
     background-color: rgb(233, 229, 229);
-    border-radius:20px;
+    border-radius: 20px;
     padding: 20px;
 }
-.bds-p{
+
+.bds-p {
     padding: 10px;
 }
 
 /* testimonials */
-.test-border{
+.test-border {
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
 }
-
+/* wave background */
 .custom-shape-divider-top-1759346674 {
     position: absolute;
     top: 0;
@@ -139,5 +153,3 @@ width: 100px;
 .custom-shape-divider-top-1759346674 .shape-fill {
     fill: #ee2d20;
 }
-
-

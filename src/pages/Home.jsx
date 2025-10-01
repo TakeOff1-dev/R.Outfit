@@ -86,8 +86,8 @@ function Home({ addToCard }) {
     slidesToScroll: 1
   };
   return (
-    <> 
-   < br/> < br/> < br/> < br/>  < br/>
+    <>
+      < br /> < br /> < br /> < br />  < br />
       <ThemeProvider
         breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
         minBreakpoint="xxs"
@@ -182,7 +182,7 @@ function Home({ addToCard }) {
                         </div>
                         <div className=" card-body flex flex-col justify-center items-center">
                           <p className="name">
-                            {i.title.substring(0 ,10)}
+                            {i.title.substring(0, 10)}
                             <p>{i.description.substring(0, 10)}</p>
                           </p>
                           <p className="price">
@@ -194,9 +194,9 @@ function Home({ addToCard }) {
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star"></i>
                           </p>
-                         <Link to="/Filter"><button className=" px-6 py-1 badge bg-secondary">
+                          <Link to="/Filter"><button className=" px-6 py-1 badge bg-secondary">
                             See more
-                          </button></Link> 
+                          </button></Link>
                         </div>
                       </div>
                     </div>
@@ -231,21 +231,21 @@ function Home({ addToCard }) {
                 </div>
               </div>
 
-                {/* another row */}
-                <div className="row">
-                  <div className="col-md-4" >
-                    <div className="card" id="bds-imgs">
-                      <p className="bds-p">Gym</p>
-                      <img src={gym} alt="" w-4 className="bds-img" />
-                    </div>
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card" id="">
-                      <p className="bds-p">Party</p>
-                      <img src={party} alt="" w-4 className="bds-img" />
-                    </div>
+              {/* another row */}
+              <div className="row">
+                <div className="col-md-4" >
+                  <div className="card" id="bds-imgs">
+                    <p className="bds-p">Gym</p>
+                    <img src={gym} alt="" w-4 className="bds-img" />
                   </div>
                 </div>
+                <div className="col-md-8">
+                  <div className="card" id="">
+                    <p className="bds-p">Party</p>
+                    <img src={party} alt="" w-4 className="bds-img" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -266,13 +266,13 @@ function Home({ addToCard }) {
               exercitationem consequatur <br />
               reprehenderit voluptatum ab quibusdam
               delectus, dolores alias eligendi
-              dolore itaque repudiandae cum ipsa. </i> 
+              dolore itaque repudiandae cum ipsa. </i>
               <div class="custom-shape-divider-top-1759346447">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
-              </p>
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+              </div>
+            </p>
             <div className="w-3/4 m-auto">
               <div className="mt-20">
                 <Slider {...settings}>
@@ -303,9 +303,9 @@ function Home({ addToCard }) {
 
                           </p>
                           <Link to="/Filter">
-                          <button className=" px-6 py-1 badge bg-secondary">
-                            See more
-                          </button>
+                            <button className=" px-6 py-1 badge bg-secondary">
+                              See more
+                            </button>
                           </Link>
                         </div>
                       </div>
