@@ -5,8 +5,8 @@ export default function Cart({ cart, setCard }) {
     // remove from cart
     const remove = (item) => {
         alert("Item removed from cart. ");
-        const allItems = [...cart] //getting all items into the card
-        allItems.splice((item.id, - 1), 1) //the 1) is to delete a single
+        const allItems = [...cart] //getting all items from the card
+        allItems.splice((item.id - 1), 1) //the 1) is to delete a single
         setCard(allItems)
         // there is a function (suplice) to delete the  item from card
 
@@ -16,8 +16,9 @@ export default function Cart({ cart, setCard }) {
     const addQuantity = (item) => {
         // alert("quantity added");
         const allItems = [...cart]
+        console.log(allItems);
         allItems[item.id - 1].quantity += 1
-        setCard(allItems)
+        setCard(allItems);
 
 
     }
@@ -32,7 +33,7 @@ export default function Cart({ cart, setCard }) {
 
     return (
         <>
-           < br/> < br/> < br/> < br/>  < br/><br/>
+            < br /> < br /> < br /> < br />  < br /><br />
 
 
             {
