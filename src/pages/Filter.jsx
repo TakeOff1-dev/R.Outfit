@@ -17,7 +17,7 @@ export default function Filter() {
 
   return (
     <>
-      {/* nav */}
+      {/* nav */} < br/> < br/> < br/> < br/>  < br/> <br/>
 
       <div className="container" >
         <br />
@@ -62,31 +62,31 @@ export default function Filter() {
         </div>
         <br />
         <hr />
-       
+
         <div className="row" >
-           <div className="sds">
-          {items.map(Val => (
-            <div className="col-md-3">
-              <div class="card">
-                <br />
-                <button className=" px-6 py-1 badge bg-primary" id="btn">
-                            Add to chart
-                          </button>
-                          <br />
-                <img src={Val.image} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5>
-                    {Val.title.substring(0, 12)}{" "}
-                    <span class="badge bg-secondary">{Val.category}</span>
-                  </h5>
-                  <p>R{Val.price}</p>
+          <div className="sds">
+            {items.map(Val => (
+              <div className="col-md-">
+                <div class="card">
+                  <br />
+                  <button className=" px-6 py-1 badge bg-primary" id="btn">
+                    Add to cart
+                  </button>
+                  <br />
+                  <img src={Val.image} class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5>
+                      {Val.title.substring(0, 12)}{" "}
+                      <span class="badge bg-secondary">{Val.category}</span>
+                    </h5>
+                    <p>R{Val.price}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-           </div>
+            ))}
+          </div>
         </div>
-       
+
       </div>
     </>
   );

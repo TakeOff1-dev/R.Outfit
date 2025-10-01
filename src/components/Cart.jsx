@@ -32,7 +32,7 @@ export default function Cart({ cart, setCard }) {
 
     return (
         <>
-            <br />
+           < br/> < br/> < br/> < br/>  < br/><br/>
 
 
             {

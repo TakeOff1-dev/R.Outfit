@@ -17,7 +17,7 @@ export default function login() {
                                 <input type="password" className="form-control" id="floatingInput" placeholder="Password" required />
                                 <label for="floatingInput">Password</label>
                             </div>
-                <button id='btn'>Login</button><br /><br />
+                <button id='btn' style={{width:"50%"}}>Login</button><br /><br />
                 <h6>OR</h6>
                 <Link to="/creact">Create account</Link>
                 <a href="#">Forgot password?</a>

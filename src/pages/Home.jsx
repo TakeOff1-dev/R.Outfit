@@ -86,7 +86,8 @@ function Home({ addToCard }) {
     slidesToScroll: 1
   };
   return (
-    <>
+    <> 
+   < br/> < br/> < br/> < br/>  < br/>
       <ThemeProvider
         breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
         minBreakpoint="xxs"

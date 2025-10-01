@@ -50,7 +50,7 @@ export default function Shop(){
 
     return(
         <>
-        
+        < br/> < br/> < br/> < br/>  < br/><br/><br/>
        
        <div className="container">
         <div className="row">

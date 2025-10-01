@@ -37,6 +37,7 @@ function Navbar({ cart }) {
 
   return (
     <>
+    <header>
       {show && (
         <div className="offersection  ">
           <div className="container-fluid d-flex justify-content-between">
@@ -133,6 +134,7 @@ function Navbar({ cart }) {
           </div>
         </div>
       </nav>
+      </header>
     </>
   );
 }

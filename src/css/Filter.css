@@ -8,6 +8,10 @@
     margin:5px;
     
 }
+.sds{
+    columns: 4;
+    width: 100%;
+}
 @media ( max-width: 720px){
 .btn-items button{
     width:100%;
