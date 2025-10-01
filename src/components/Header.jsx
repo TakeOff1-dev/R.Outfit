@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Header.css";
 
-function Navbar({cart}) {
+function Navbar({ cart }) {
   const [show, setShow] = useState(true);
   const [index, setIndex] = useState(0);
 
@@ -22,7 +22,7 @@ function Navbar({cart}) {
       text: "Get 10% off your first order",
       link: "/Login"
     },
-   
+
   ];
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -104,7 +104,7 @@ function Navbar({cart}) {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/Contact">
-                     Contact Us
+                      Contact Us
                     </Link>
                   </li>
                 </ul>
@@ -114,20 +114,20 @@ function Navbar({cart}) {
                   Category
                 </Link>
               </li>
-               <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="/Contact">
                   Contact Us
                 </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
-            
+
               <div className="form-floating">
-                                <input type="text" class="form-control" id="search" placeholder="Search"  />
-                                <label for="floatingPassword">Search</label>
-                            </div>
+                <input type="text" class="form-control" id="search" placeholder="Search" />
+                <label for="floatingPassword">Search</label>
+              </div>
               <Link to="/Cart"><i id="icons" class="bi bi-cart"></i><p>{cart.length}</p></Link>
-            <Link to="/Favorites"><i id="icons" class="bi bi-heart"></i></Link>  
+              <Link to="/Favorites"><i id="icons" class="bi bi-heart"></i></Link>
               <Link to="/Profile"><i id="icons" class="bi bi-person-circle"></i></Link>
             </form>
           </div>

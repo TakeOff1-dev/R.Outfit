@@ -4,18 +4,24 @@ import { Link } from 'react-router-dom'
 
 export default function Creact() {
     return (
-        < div className=' bg-light bg-gradient background'>
+        < div className='container '>
 
             <form action="">
-                <h3>Sign up</h3>
+               <p>Sign Up</p>
                 <br />
-                <div className="input">
-                    <input type="text" name="" id="" className='form-floating' placeholder='Username' required /> <br /><br />
-                    <input type="email" name="" id="" placeholder='E-mail' required /> <br /><br />
-                    <input type="password" name="" id="" placeholder='Password' required /> <br /><br />
-                    <input type="password" name="" id="" placeholder='Cofirm Password' required /> <br /><br />
-                </div>
-                <button id='btn'>Create</button><br /><br />
+                <div className="form-floating mb-3">
+                                <input type="text" className="form-control" id="floatingInput" placeholder="Usernmae" required />
+                                <label for="floatingInput">Usernmae</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" id="floatingInput" placeholder="email" required />
+                                <label for="floatingInput">E-mail</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="password" className="form-control" id="floatingInput" placeholder="Password" required />
+                                <label for="floatingInput">Password</label>
+                            </div> 
+                <button id='btn' style={{width:"50%"}}>Create Account</button><br /><br />
 
 
             </form>

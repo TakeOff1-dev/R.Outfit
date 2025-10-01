@@ -5,16 +5,16 @@ export default function Contact() {
     return (
         <>
             <br />
-           
+
 
 
             {/* form */}
 
-           
+
             <form action="">
                 <div className="container">
                     <div className="row">
-                       <p>Contact Us</p>
+                        <p>Contact Us</p>
                         <div className="col-md-">
                             <div className="form-floating mb-3">
                                 <input type="text" className="form-control" id="floatingInput" placeholder="Usernmae" required />
