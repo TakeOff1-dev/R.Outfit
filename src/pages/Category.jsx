@@ -6,6 +6,11 @@ import '../css/Category.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+//images
+import trouser2 from '../images/trouser2.png'
+import trouser1 from '../images/trouser1.png'
+import shirt3 from '../images/shirt3.png'
+import tshirt12 from '../images/tshirt2.png'
 
 export default function Category(){
 
@@ -50,6 +55,36 @@ export default function Category(){
         <>
 
         <br />< br/> < br/> < br/> < br/>  < br/>
+
+        <br />
+        {/* row of 4 */}
+        <div className="img">
+        <div className="container">
+          <div className="row">
+           <div className="col-md-3">
+           <div className="i-images">
+             <img src={trouser2} alt="" />
+           </div>
+           </div>
+           <div className="col-md-3">
+           <div className="i-images">
+            <img src={trouser1} alt="" />
+           </div>
+           </div>
+           <div className="col-md-3">
+           <div className="i-images">
+               <img src={shirt3} alt="" />
+           </div>
+           </div>
+           <div className="col-md-3">
+           <div className="i-images">
+              <img src={tshirt12} alt="" />
+           </div>
+           </div>
+          </div>
+          </div>
+        
+        </div>
 
         <div className="container">
             

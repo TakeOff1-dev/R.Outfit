@@ -36,7 +36,11 @@ H1 {
     .bi-star {
         display: none;
     }
-
+.img{
+    columns: 2;
+    padding: 5px;
+    width: 100%;
+}
 
 }
 
@@ -61,6 +65,14 @@ H1 {
     color: white;
 
 
+}
+/* i-images */
+
+.i-images img{
+    height: 150px;
+    width: 100%;
+    padding:5px;
+    cursor: pointer;
 }
 
 /* new arrival */
@@ -107,7 +119,7 @@ Link {
 .name {
     color: white;
     background-color: black;
-    padding: 5px;
+    padding: 3px;
 
 }
 

@@ -17,6 +17,11 @@ import formal from '../images/formal.png'
 import gym from '../images/gym.png'
 import party from '../images/party.png'
 
+import trouser2 from '../images/trouser2.png'
+import trouser1 from '../images/trouser1.png'
+import shirt3 from '../images/shirt3.png'
+import tshirt12 from '../images/tshirt2.png'
+
 function Home({ addToCard }) {
   // // array of image
   // const images = [
@@ -157,10 +162,47 @@ function Home({ addToCard }) {
           </div>
         </div>
 
+<br />
+{/* row of 4 */}
+<div className="img">
+<div className="container">
+  <div className="row">
+   <div className="col-md-3">
+   <div className="i-images">
+     <img src={trouser2} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+    <img src={trouser1} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+       <img src={shirt3} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+      <img src={tshirt12} alt="" />
+   </div>
+   </div>
+  </div>
+  </div>
+
+</div>
+ 
+   <div class="custom-shape-divider-top-1759346447">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+              </div>
+     
+
         {/* new arrivals */}
         <div className="new-arrivals">
 
-          <br />
+          
           <div className="container">
             <h3 className="text-center">
               {" "}
@@ -187,7 +229,8 @@ function Home({ addToCard }) {
                           </p>
                           <p className="price">
                             R{i.price}
-                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-heart"></i> <br />
+                            <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -294,16 +337,17 @@ function Home({ addToCard }) {
                           </p>
                           <p className="price">
                             R{i.price}
-                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-heart"></i> <br />
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
+                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star"></i>
 
                           </p>
                           <Link to="/Filter">
-                            <button className=" px-6 py-1 badge bg-secondary">
+                            <button className=" px-6 py-1 badge bg-secondary" st>
                               See more
                             </button>
                           </Link>
@@ -327,6 +371,37 @@ function Home({ addToCard }) {
           </div>
 
 
+<br />
+{/* row of 4 */}
+<div className="img">
+<div className="container">
+  <div className="row">
+   <div className="col-md-3">
+   <div className="i-images">
+     <img src={trouser2} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+    <img src={trouser1} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+       <img src={shirt3} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+      <img src={tshirt12} alt="" />
+   </div>
+   </div>
+  </div>
+  </div>
+
+</div>
+ 
+
           {/* testimonials */}
           <div className="container">
             <div className="row">
@@ -334,13 +409,13 @@ function Home({ addToCard }) {
               <br /><br />
               <div className="col-md-4">
                 <div className="test-border">
-
+<h6>Conil C</h6>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
-                  <h6>Conil C</h6>
+                  
                   <p style={{ color: "grey" }}> Lorem, ipsum dolor sit amet consectetur adipisicing
                     elit. Dolores esse, necessitatibus placeat
                     architecto ab minima iste odio officiis totam,
@@ -350,13 +425,13 @@ function Home({ addToCard }) {
               </div>
               <div className="col-md-4">
                 <div className="test-border">
-
+<h6>Saad A</h6>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
-                  <h6>Saad A</h6>
+                  
                   <p style={{ color: "grey" }}>Lorem, ipsum dolor sit amet consectetur adipisicing
                     elit. Dolores esse, necessitatibus placeat
                     architecto ab minima iste odio officiis totam,
@@ -366,13 +441,13 @@ function Home({ addToCard }) {
               </div>
               <div className="col-md-4">
                 <div className="test-border">
-
+<h6>Sarah M</h6>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star"></i>
-                  <h6>Sarah M</h6>
+                  
                   <p style={{ color: "grey" }}>Lorem, ipsum dolor sit amet consectetur adipisicing
                     elit. Dolores esse, necessitatibus placeat
                     architecto ab minima iste odio officiis totam,

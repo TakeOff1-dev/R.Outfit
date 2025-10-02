@@ -4,6 +4,11 @@ import '../css/Shop.css'
 import shopimg from '../images/shopimg.png'
 import shopimg1 from '../images/shopimg1.png'
 import shopimg2 from '../images/shopimg2.png'
+
+import trouser2 from '../images/trouser2.png'
+import trouser1 from '../images/trouser1.png'
+import shirt3 from '../images/shirt3.png'
+import tshirt12 from '../images/tshirt2.png'
 // courousel
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -124,6 +129,38 @@ export default function Shop(){
             </div>
         </div>
        </div>
+
+
+<br />
+{/* row of 4 */}
+<div className="img">
+<div className="container">
+  <div className="row">
+   <div className="col-md-3">
+   <div className="i-images">
+     <img src={trouser2} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+    <img src={trouser1} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+       <img src={shirt3} alt="" />
+   </div>
+   </div>
+   <div className="col-md-3">
+   <div className="i-images">
+      <img src={tshirt12} alt="" />
+   </div>
+   </div>
+  </div>
+  </div>
+
+</div>
+
         
         {/* you may also like */}
          <br />
