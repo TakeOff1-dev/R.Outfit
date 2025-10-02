@@ -10,7 +10,12 @@ height: 30px;
 width: 30px;
 }
 
-
+.dress img{
+    height: 150px;
+    width: 100%;
+    padding:5px;
+    cursor: pointer;
+}
 #color-2{
 background-color: green;
 border-radius: 50%;
@@ -53,4 +58,16 @@ background-color: rgb(2, 12, 2);
 border-radius: 50%;
 height: 30px;
 width: 30px;
+}
+
+@media  (max-width:720px ){
+    .imgg{
+    columns: 2;
+    padding: 5px;
+    width: 100%;
+}
+.dress img{
+    
+    width: 100%;
+}
 }

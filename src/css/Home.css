@@ -36,9 +36,13 @@ H1 {
     .bi-star {
         display: none;
     }
-.img{
+.imgg{
     columns: 2;
     padding: 5px;
+    width: 100%;
+}
+.dress img{
+    
     width: 100%;
 }
 
@@ -66,9 +70,9 @@ H1 {
 
 
 }
-/* i-images */
+/* dress */
 
-.i-images img{
+.dress img{
     height: 150px;
     width: 100%;
     padding:5px;

@@ -87,8 +87,29 @@ function Home({ addToCard }) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+{
+  breakpoint:1200,
+  settings:{
+    slidesToShow:3,
+  }
+},
+{
+  breakpoint:768,
+  settings:{
+    slidesToShow:2,
+  }
+},
+{
+  breakpoint:480,
+  settings:{
+    slidesToShow:1,
+  }
+},
+
+    ]
   };
   return (
     <>
@@ -164,26 +185,27 @@ function Home({ addToCard }) {
 
 <br />
 {/* row of 4 */}
-<div className="img">
+<div className="imgg">
 <div className="container">
   <div className="row">
    <div className="col-md-3">
-   <div className="i-images">
+   <div className="dress">
      <img src={trouser2} alt="" />
    </div>
    </div>
    <div className="col-md-3">
-   <div className="i-images">
+   <div className="dress">
     <img src={trouser1} alt="" />
    </div>
    </div>
    <div className="col-md-3">
-   <div className="i-images">
+   <div className="dress">
        <img src={shirt3} alt="" />
    </div>
    </div>
+   
    <div className="col-md-3">
-   <div className="i-images">
+   <div className="dress">
       <img src={tshirt12} alt="" />
    </div>
    </div>

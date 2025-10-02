@@ -58,7 +58,12 @@ width: 30px;
     
 }
 
-
+.dress img{
+    height: 150px;
+    width: 100%;
+    padding:5px;
+    cursor: pointer;
+}
 
 @media (max-width: 720px) {
     .cloths{
@@ -70,5 +75,15 @@ width: 30px;
        
         padding: 2px;
         
+    
     }
+        .imgg{
+    columns: 2;
+    padding: 5px;
+    width: 100%;
+}
+.dress img{
+    
+    width: 100%;
+}
 }
