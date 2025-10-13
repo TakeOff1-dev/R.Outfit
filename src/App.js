@@ -15,6 +15,8 @@ import Profile from './components/Profile'
 import Cart from './components/Cart'
 import Favorites from './components/Favorites'
 import Contact from './components/Contact'
+import Shipping from './components/Shipping'
+import Payment from './components/Payment'
 
 //pages
 import Home from './pages/Home'
@@ -22,8 +24,10 @@ import Filter from './pages/Filter'
 import Shop from './pages/Shop'
 import Category from './pages/Category'
 
-// //Test
-// import Todo from './test/Todo'
+//dashboard
+import Addproduct from './dashboard/Addproduct'
+
+ 
 
 
 // routes
@@ -58,10 +62,12 @@ function App() {
         <Route path='/Profile' element={<Profile />} />
         <Route path='/Filter' element={<Filter />} />
         <Route path='/Cart' element={<Cart cart={cart} setCard={setCard} />} />
+        <Route path='/Shipping' element={<Shipping />} />
+         <Route path='/Payment' element={<Payment />} />
         <Route path='/Favorites' element={<Favorites />} />
         <Route path='/Category' element={<Category />} />
         <Route path='/Contact' element={<Contact />} />
-
+        <Route path='/Addproduct' element={<Addproduct />} />
 
       </Routes>
 

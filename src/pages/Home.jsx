@@ -420,7 +420,6 @@ function Home({ addToCard }) {
    </div>
   </div>
   </div>
-
 </div>
  
 

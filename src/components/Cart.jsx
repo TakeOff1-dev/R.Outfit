@@ -1,4 +1,5 @@
 import '../css/Cart.css'
+import {Link }from 'react-router-dom'
 
 export default function Cart({ cart, setCard }) {
 
@@ -37,8 +38,14 @@ export default function Cart({ cart, setCard }) {
 
 
             {
-                <div className="container">
-                    <p>Your cart</p>
+                <div className="container" id="shipping-bg">
+                    <br />
+                    <div className="d-flex">
+                 <p>Your cart <Link to="/Shipping"> Shipping  </Link></p>
+                   
+                    </div>
+                 
+                    
                     {
                         cart.map(item => (
                             <div key={item.id} className="addToCard">

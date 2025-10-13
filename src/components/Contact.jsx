@@ -12,7 +12,7 @@ export default function Contact() {
 
 
             <form action="">
-                <div className="container">
+                <div className="container" id="shipping-bg">
                     <div className="row">
                         <p>Contact Us</p>
                         <div className="col-md-">
