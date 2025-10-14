@@ -21,8 +21,6 @@ export default function Addproduct() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-
         try {
             const response = await axios.post("http://localhost:5000/product", data);
             console.log("API Response:", response.data);
@@ -33,6 +31,7 @@ export default function Addproduct() {
         }
 
     }
+   
 
     return (
         <> <br /><br /><br /><br /><br /><br /><br /><br />
