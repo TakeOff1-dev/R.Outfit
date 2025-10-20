@@ -4,7 +4,7 @@ import {Link }from 'react-router-dom'
 export default function Cart({ cart, setCard }) {
 
     // remove from cart
-    const remove = (item) => {
+    const remove = ({cart, item}) => {
         alert("Item removed from cart. ");
         const allItems = [...cart] //getting all items from the card
         allItems.splice((item.id - 1), 1) //the 1) is to delete a single
@@ -34,11 +34,13 @@ export default function Cart({ cart, setCard }) {
 
     return (
         <>
-            < br /> < br /> < br /> < br />  < br /><br />
+            < br /> < br /> < br /> < br />  < br /><br /> 
 
 
             {
-                <div className="container" id="shipping-bg">
+                <div className="container" >
+<div className="row">
+    <div className="col-md-8">
                     <br />
                     <div className="d-flex">
                  <p>Your cart <Link to="/Shipping"> Shipping  </Link></p>
@@ -63,6 +65,40 @@ export default function Cart({ cart, setCard }) {
                         ))
                     }
                 </div>
+                 
+                <div className="col-md-4" id="shipping-bg">
+                    <br />
+                   <h4>Order Summary</h4> 
+                   <br />
+                 
+{
+    cart.map(item =>(
+         <div key={item.id} >
+  <div className="subtotal">
+                    <h5>{item.title.substring(0, 12)} </h5> 
+                    <p>R {item.price}</p> 
+                <h6> Total Q'ty  :{  item.quantity} </h6>
+                   </div> 
+                   <hr />
+     </div>
+     
+    ))
+   
+}
+
+<h6> Total No of items :{ cart.length } </h6>
+
+<br /><br />
+           <Link to="/Shipping"><button id='btn' style={{width:"80%"}}>Proceed to checkout</button><br /><br />    </Link>
+
+            <Link to="/"> <button id='btnn' style={{width:"80%"}}>Continue shopping</button><br /><br /> </Link>  
+               
+            
+                </div>
+</div>
+</div>
+
+  
             }
 
 

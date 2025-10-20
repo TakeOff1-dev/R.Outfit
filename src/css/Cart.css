@@ -22,6 +22,18 @@
 p {
     color: red;
 }
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#btnn{
+    border: none;
+    padding:10px;
+    border-radius:5px;
+    margin-left: 5%;
+}
 
 @media (max-width:720px) {
     .addToCard {
