@@ -76,7 +76,7 @@ export default function Cart({ cart, setCard }) {
          <div key={item.id} >
   <div className="subtotal">
                     <h5>{item.title.substring(0, 12)} </h5> 
-                    <p>R {item.price}</p> 
+                    <p>R {item.price * item.quantity}</p> 
                 <h6> Total Q'ty  :{  item.quantity} </h6>
                    </div> 
                    <hr />
