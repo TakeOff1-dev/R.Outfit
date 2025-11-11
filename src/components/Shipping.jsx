@@ -71,13 +71,13 @@ export default function Shipping({ cart, setCard }) {
                                 <label for="floatingInput">Last name</label>
                             </div>
                             <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingInput" placeholder="state" name="state" onChange={handleChange} required />
-                                    <label for="floatingInput">State</label>
-                                </div>
-                                 <div className="form-floating mb-3">
-                                    <input type="number" className="form-control" id="floatingInput" placeholder="zipcode" name="zipcode" onChange={handleChange} required />
-                                    <label for="floatingInput">Zip code</label>
-                                </div>
+                                <input type="text" className="form-control" id="floatingInput" placeholder="state" name="state" onChange={handleChange} required />
+                                <label for="floatingInput">State</label>
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="number" className="form-control" id="floatingInput" placeholder="zipcode" name="zipcode" onChange={handleChange} required />
+                                <label for="floatingInput">Zip code</label>
+                            </div>
 
                         </div>
                         <div className="col-md-4">
@@ -85,7 +85,7 @@ export default function Shipping({ cart, setCard }) {
                                 <input type="email" className="form-control" id="floatingInput" placeholder="email" name="email" onChange={handleChange} required />
                                 <label for="floatingInput">E-mail</label>
 
-                                 <div className="form-floating mb-3">
+                                <div className="form-floating mb-3">
                                     <input type="text" className="form-control" id="floatingInput" placeholder="city" name="city" onChange={handleChange} required />
                                     <label for="floatingInput">City</label>
                                 </div>
@@ -95,31 +95,31 @@ export default function Shipping({ cart, setCard }) {
                                 <label for="floatingInput">Phone number</label>
                             </div>
                             <div className="form-floating mb-3" >
-                            <input type="textarea" style={{ padding: "60px" }} className="form-control" id="floatingInput" placeholder="description" name="description" onChange={handleChange} />
-                            <label for="floatingInput">Desciprion</label>
-                        </div>
+                                <input type="textarea" style={{ padding: "60px" }} className="form-control" id="floatingInput" placeholder="description" name="description" onChange={handleChange} />
+                                <label for="floatingInput">Desciprion</label>
+                            </div>
 
                         </div>
 
-                         {/* card */}
+                        {/* card */}
                         <div className="col md 4">
                             <p>Card</p>
 
- {/* Right: Order Summary */}
-                   
+                            {/* Right: Order Summary */}
 
-                            
-                             <Link to="/Payment"> <button onClick={handleSubmit} type="submit" id='btn' style={{ width: "90%" }}>Continue payment</button><br /><br /></Link>
-                             
+
+
+                            <Link to="/Payment"> <button onClick={handleSubmit} type="submit" id='btn' style={{ width: "90%" }}>Continue payment</button><br /><br /></Link>
+
                         </div>
 
-                      
+
 
                         {/* last row */}
 
-                        
 
-                       
+
+
                     </div>
                 </div>
             </form>

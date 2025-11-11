@@ -26,6 +26,9 @@ import Category from './pages/Category'
 
 //dashboard
 import Addproduct from './dashboard/Addproduct'
+import Dashboard from './dashboard/Dashboard'
+import Sidenav from './dashboard/Sidenav'
+import Newproduct from './dashboard/Newproduct'
 
  
 
@@ -67,7 +70,11 @@ function App() {
         <Route path='/Favorites' element={<Favorites />} />
         <Route path='/Category' element={<Category />} />
         <Route path='/Contact' element={<Contact />} />
-        <Route path='/Addproduct' element={<Addproduct />} />
+        {/* dashboard */}
+        <Route path='/Addproduct' element={<Addproduct />} /> 
+        <Route path='/Dashboard' element={<Dashboard />} />
+         <Route path='/Sidenav' element={<Sidenav />} />
+          <Route path='/Newproduct' element={<Newproduct />} />
 
       </Routes>
 
