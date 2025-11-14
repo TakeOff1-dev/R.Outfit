@@ -41,7 +41,6 @@ function App() {
 
   // add to cart
   const [cart, setCard] = useState([]);
-
   const addToCard = (item) => {
     const newCart = [...cart, item];
     alert(item.title)
@@ -49,11 +48,20 @@ function App() {
   }
 
 
+const [page, setPage] = useState('')
+useEffect(()=>{
+  setPage(window.location.pathname);
+},[window.location.pathname]);
 
   return (
     <div className="App">
+      
+{
+  page === '/Newproduct' || page === '/Dashboard' ? null:
+  <Header cart={cart} />
+}
 
-      <Header cart={cart} />
+      {/* <Header cart={cart} /> */}
 
       <Routes>
         {/* <Route path='/' element={ <Todo /> } /> */}
@@ -71,10 +79,10 @@ function App() {
         <Route path='/Category' element={<Category />} />
         <Route path='/Contact' element={<Contact />} />
         {/* dashboard */}
-        <Route path='/Addproduct' element={<Addproduct />} /> 
+        {/* <Route path='/Addproduct' element={<Addproduct />} />  */}
         <Route path='/Dashboard' element={<Dashboard />} />
-         <Route path='/Sidenav' element={<Sidenav />} />
-          <Route path='/Newproduct' element={<Newproduct />} />
+          <Route path='/Sidenav' element={<Sidenav />} />
+          <Route path='/Newproduct' element={<Newproduct />} /> 
 
       </Routes>
 
